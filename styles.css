@@ -1,0 +1,331 @@
+/* === Global Reset & Base === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #fdfdfd;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 60ch;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Links === */
+a:not(.btn) {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:not(.btn):hover {
+  text-decoration: none;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #4682B4;
+  color: #183c5a;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand {
+  color: #183c5a !important;
+  font-weight: 700;
+  text-decoration: none;
+  pointer-events: none;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: larger;
+  margin: 0 0.5rem;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+.navbar .btn-primary {
+  border-radius: 50px;
+  padding: 0.45rem 1.2rem;
+  font-weight: 500;
+  font-size: larger;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+.navbar .btn-primary:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* === Logo === */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#logo {
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* === Hero Banner === */
+.hero-banner {
+  background: url("./assets/home.png") center/cover no-repeat;
+  background-color: #4682B4;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  position: relative;
+  text-align: center;
+  color: #183c5a;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+/* === CTA Button === */
+.btn-cta {
+  background-color: #4682B4;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  /* box-shadow: 0 4px 16px rgba(0, 168, 232, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease; */
+}
+/* .btn-cta:hover {
+  background-color: #fff;
+} */
+
+/* === Sections & Typography === */
+section {
+  padding: 4rem 1rem;
+}
+section h2,
+section h3,
+section h4,
+section p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+section p {
+  max-width: 60ch;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
+/* Team Section */
+
+/* --- Team Banner Styling --- */
+.banner {
+  position: relative;
+  background-color: #4682B4;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  overflow: hidden;
+}
+
+/* Style for the image INSIDE the team-banner */
+#banner-img {
+  max-width: 85%;
+  height: auto;
+  display: block;
+}
+
+/* --- Team Member Card Styles --- */
+.card-img-headshot-adjust {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* === Forms === */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* === Contact Section === */
+.contact-hero {
+  background-color: #eaf7fc;
+  color: #183c5a;
+}
+.contact-form-section h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-form-section p,
+.contact-form-section label {
+  color: #444;
+}
+
+.contact-form-section {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .contact-map iframe {
+    height: 200px;
+  }
+
+  .about-page {
+    padding: 30px;
+    margin: auto;
+  }
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+}
+footer a {
+  color: inherit;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Animation === */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+
+  .hero-banner p {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 0.65rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .btn-primary {
+    font-size: 0.9rem;
+    padding: 0.35rem 1rem;
+  }
+
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
