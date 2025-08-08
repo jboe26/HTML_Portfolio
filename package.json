@@ -1,0 +1,26 @@
+{
+  "name": "html_portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio. This site showcases a curated selection of my work across web development, design, usability testing, and creative problem-solving. It reflects my commitment to clarity, impact, and values-driven growth.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jboe26/html_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jboe26/html_portfolio/issues"
+  },
+  "homepage": "https://github.com/jboe26/html_portfolio#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {}
+}
