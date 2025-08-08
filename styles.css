@@ -279,14 +279,26 @@ select {
 
 /* === Footer === */
 footer {
-  font-size: 0.9rem;
-}
-footer a {
-  color: inherit;
-}
-.footer-nav a:hover {
-  text-decoration: underline;
-}
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  footer a {
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
 
 /* === Images === */
 img {
