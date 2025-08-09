@@ -30,23 +30,31 @@
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Banner -->
-    <section class="banner">
-        <img id="banner-img" src="./assets/projects.png" alt="projects header">
-    </section>
+    <!-- Hero Section -->
+    <header>
+        <div class="p-5 mb-4 bg-light rounded-3 text-center">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold">Work I've Done</h1>
+                <p class="col-lg-8 mx-auto fs-4">
+                    From branding and infrastructure to web development and community tools, each project reflects a
+                    commitment to clarity, impact, and transformation. Dive into the work that drives real-world change.
+                </p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-3">Explore Projects</a>
+            </div>
+        </div>
+    </header>
 
     <main>
-
-        <section class="py-5">
+        <!-- <section class="py-5">
             <div class="container text-center">
-                <h3 class="mb-4">Project Focus Areas</h3>
+                <h3 class="mb-4">Real-World Impact Through Design & Development</h3>
                 <ul class="list-unstyled row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2">
                     <li class="col"><span class="fw">Business Infrastructure</span></li>
                     <li class="col"><span class="fw">Marketing & Branding</span></li>
@@ -58,7 +66,7 @@
                     <li class="col"><span class="fw">Personal Development Systems</span></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Project Highlights -->
         <section id="projects">
@@ -66,8 +74,8 @@
                 <h2 class="mb-4">Featured Projects</h2>
                 <p class="mx-auto mb-5" style="max-width: 700px;">
                     Joshua Boepple Portfolio showcases a range of hands-on, purpose-driven projects that blend technical
-                    skill,
-                    creative design, and holistic growth. Each initiative reflects a commitment to clarity, impact, and
+                    skill, creative design, and holistic growth. Each initiative reflects a commitment to clarity,
+                    impact, and
                     transformation.
                 </p>
 
@@ -104,7 +112,6 @@
                 </div>
 
                 <div class="row g-4 mt-4">
-
                     <div class="col-md-4">
                         <div class="service-card p-4 h-100 shadow-sm rounded bg-white">
                             <img src="assets/charlottegame.jpeg" alt="Project preview" class="img-fluid mb-3 rounded" />
@@ -148,39 +155,71 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <div style="background-color: #f2f9fc; color: black;" class="pt-3 pb-1 mt-5 border-top">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
-                    </div>
+        <section class="tech-skills py-5 bg-light">
+            <div class="container text-center">
+              <h3 class="mb-4">Technical Skills</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                <div class="col">
+                  <div class="p-3 border rounded shadow-sm h-100">
+                    <h5 class="fw-bold">Front-End Development</h5>
+                    <p>HTML, CSS, JavaScript, React.js</p>
+                  </div>
                 </div>
-
-                <div class="text-center mt-3">
-                    <p class="sm m-0 text-center">
-                        Connect with me on
-                        <a href="https://github.com/jboe26" target="_blank"
-                            class="text-decoration-none text-black">GitHub</a>
-                        and
-                        <a href="https://www.linkedin.com/in/joshrboepple/" target="_blank"
-                            class="text-decoration-none text-black">LinkedIn</a>.
-                    </p>
+                <div class="col">
+                  <div class="p-3 border rounded shadow-sm h-100">
+                    <h5 class="fw-bold">Responsive Design</h5>
+                    <p>Mobile-first layouts, Flexbox, Grid, Media Queries</p>
+                  </div>
                 </div>
-                <nav class="footer-nav small mt-4 text-center">
-                    <a href="index.html" class="mx-2 text-decoration-none text-black">Home</a>
-                    <a href="projects.html" class="mx-2 text-decoration-none text-black">Projects</a>
-                    <a href="contact.html" class="mx-2 text-decoration-none text-black">Contact</a>
-                </nav>
+                <div class="col">
+                  <div class="p-3 border rounded shadow-sm h-100">
+                    <h5 class="fw-bold">Version Control</h5>
+                    <p>Git, GitHub, Branching, Pull Requests</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3 border rounded shadow-sm h-100">
+                    <h5 class="fw-bold">Deployment</h5>
+                    <p>Netlify, Render, Hosting Setup, Domain Linking</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-    </div>
+          </section>
+          
 
-    <!-- Bootstrap Script Only -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Footer -->
+        <div style="background-color: #f2f9fc; color: black;" class="pt-3 pb-1 mt-5 border-top">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <p class="sm m-0 text-center">
+                            Connect with me on
+                            <a href="https://github.com/jboe26" target="_blank"
+                                class="text-decoration-none text-black">GitHub</a>
+                            and
+                            <a href="https://www.linkedin.com/in/joshrboepple/" target="_blank"
+                                class="text-decoration-none text-black">LinkedIn</a>.
+                        </p>
+                    </div>
+                    <nav class="footer-nav small mt-4 text-center">
+                        <a href="index.html" class="mx-2 text-decoration-none text-black">Home</a>
+                        <a href="projects.html" class="mx-2 text-decoration-none text-black">Projects</a>
+                        <a href="contact.html" class="mx-2 text-decoration-none text-black">Contact</a>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Bootstrap Script Only -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

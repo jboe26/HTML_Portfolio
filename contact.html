@@ -22,29 +22,33 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navMenu">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="banner">
-        <img id="banner-img" src="./assets/contact.png" alt="contact header" />
-    </section>
+    <!-- Hero Section -->
+    <!-- <header>
+    <div class="p-5 mb-4 bg-light rounded-3 text-center">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold">Let’s Connect</h1>
+        <p class="col-lg-8 mx-auto fs-4">
+          Whether you're exploring collaboration or have questions about a project, I'm here to connect. Reach out and let's start a conversation.
+        </p>
+        <a href="#contactForm" class="btn btn-primary btn-lg mt-3">Send a Message</a>
+      </div>
+    </div>
+  </header> -->
 
+    <!-- Contact Intro -->
     <p class="lead mx-auto text-center mt-4" style="max-width: 700px;">
         Whether you're exploring collaboration or have questions about a project, I'm here to connect.
     </p>
 
+    <!-- Contact Form Section -->
     <section class="contact-form-section py-5 bg-light">
         <div class="container">
             <div class="row g-5">
@@ -62,16 +66,15 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-secondary">Let's Connect!</button>
                     </form>
                 </div>
-
+<!-- 
                 <div class="col-md-6 text-center">
                     <h4>Location & Contact</h4>
                     <p>Charlotte, North Carolina<br />Available for remote and local collaboration</p>
                     <p><a href="mailto:joshrboepple@outlook.com">Email Me</a></p>
-                    <!-- <p>Phone: <a href="tel:+10000000000">[Your Phone Number]</a></p> -->
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -124,53 +127,58 @@
     </div>
 
     <!-- Scripts -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Animate fade-up elements
-      const fadeElements = document.querySelectorAll('.fade-up');
-      fadeElements.forEach(el => {
-        el.style.opacity = 0;
-        el.style.transform = 'translateY(40px)';
-        setTimeout(() => {
-          el.style.transition = 'all 0.8s ease-out';
-          el.style.opacity = 1;
-          el.style.transform = 'translateY(0)';
-        }, 200);
-      });
-
-      // Contact form submission
-      const form = document.getElementById('contactForm');
-      if (form) {
-        form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-
-          // Immediately show modal
-          const modal = new bootstrap.Modal(document.getElementById('successModal'));
-          modal.show();
-
-          const formData = new FormData(form);
-          const data = Object.fromEntries(formData.entries());
-
-          try {
-            const response = await fetch('https://contact-form-backend-5w7f.onrender.com/send-email', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data),
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(40px)';
+                setTimeout(() => {
+                    el.style.transition = 'all 0.8s ease-out';
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                }, 200);
             });
 
-            if (response.ok) {
-              form.reset();
-            } else {
-              alert('Something went wrong. Please try again.');
-            }
-          } catch (err) {
-            alert('An error occurred. Please try again later.');
-          }
-        });
-      }
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
 
-    });
-  </script>
+                    if (!form.checkValidity()) {
+                        form.classList.add('was-validated');
+                        return; // Stop here if form is invalid
+                    }
+
+                    // Optional: reset validation state if needed
+                    form.classList.remove('was-validated');
+
+                    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+                    modal.show();
+
+
+                    const formData = new FormData(form);
+                    const data = Object.fromEntries(formData.entries());
+
+                    try {
+                        const response = await fetch('https://contact-form-backend-5w7f.onrender.com/send-email', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data),
+                        });
+
+                        if (response.ok) {
+                            form.reset();
+                        } else {
+                            alert('Something went wrong. Please try again.');
+                        }
+                    } catch (err) {
+                        alert('An error occurred. Please try again later.');
+                    }
+                });
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
