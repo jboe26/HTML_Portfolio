@@ -1,3 +1,74 @@
+/* --- Portfolio Custom Styles --- */
+
+/* Navbar Styles */
+.navbar-custom {
+  background-color: #4682b4 !important; /* steel blue */
+  color: #fff !important;
+}
+.navbar-custom .nav-link {
+  color: #fff !important;
+  transition: color 0.2s;
+}
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link:hover {
+  color: #2563eb !important;
+}
+
+/* Hero Section Styles */
+.hero-overlay {
+  min-height: 400px;
+  max-height: 700px;
+  overflow: hidden;
+}
+.hero-bg-img {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  filter: blur(1px);
+  opacity: 0.5;
+}
+.hero-dark-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 41, 59, 0);
+  z-index: 2;
+}
+.hero-overlay .p-5 {
+  position: relative;
+  z-index: 3;
+}
+.hero-overlay .container,
+.frosted-glass {
+  background: rgba(30, 41, 59, 0.85);
+  border-radius: 1rem;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 3rem 2rem;
+  color: #fff;
+}
+.hero-overlay .text-white {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* Button Styles */
+.btn-outline-dark {
+  border-color: #1e293b;
+  color: #1e293b;
+}
+.btn-outline-dark:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+/* --- End Portfolio Custom Styles --- */
 /* === Global Reset & Base === */
 *,
 *::before,
