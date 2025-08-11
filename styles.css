@@ -46,7 +46,7 @@ a:not(.btn):hover {
 
 /* === Navbar === */
 .navbar {
-  background-color: #4682B4;
+  background-color: #4682b4;
   color: #183c5a;
 }
 .navbar .container {
@@ -100,7 +100,7 @@ a:not(.btn):hover {
 /* === Hero Banner === */
 .hero-banner {
   background: url("./assets/home.png") center/cover no-repeat;
-  background-color: #4682B4;
+  background-color: #4682b4;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -125,19 +125,23 @@ a:not(.btn):hover {
 }
 
 /* === CTA Button === */
-.btn-cta {
-  background-color: #4682B4;
-  color: #fff;
+
+/* === Secondary Button (Navbar & Get In Touch) === */
+.btn-secondary {
+  background-color: #4682b4 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 50px;
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
-  border-radius: 50px;
-  border: none;
-  /* box-shadow: 0 4px 16px rgba(0, 168, 232, 0.25);
-  transition: background 0.3s ease, box-shadow 0.3s ease; */
+  font-weight: 500;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
-/* .btn-cta:hover {
-  background-color: #fff;
-} */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #315c87 !important;
+  color: #fff !important;
+}
 
 /* === Sections & Typography === */
 section {
@@ -167,7 +171,7 @@ section p {
 /* --- Team Banner Styling --- */
 .banner {
   position: relative;
-  background-color: #4682B4;
+  background-color: #4682b4;
   height: 300px;
   display: flex;
   align-items: center;
@@ -279,26 +283,24 @@ select {
 
 /* === Footer === */
 footer {
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
-  footer .text-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  
-  footer a {
-    padding: 6px 12px;
-    border-radius: 5px;
-    margin: 0 5px;
-  }
-  
+footer .text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer a {
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
 
 /* === Images === */
 img {
@@ -308,9 +310,25 @@ img {
 }
 
 /* === Animation === */
+
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card hover effect */
+.service-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 8px 24px rgba(70, 130, 180, 0.18);
+  transform: translateY(-8px) scale(1.03);
 }
 
 /* === Responsive === */
@@ -318,7 +336,6 @@ img {
   .hero-banner h1 {
     font-size: 2rem;
   }
-
 
   .hero-banner p {
     font-size: 1rem;

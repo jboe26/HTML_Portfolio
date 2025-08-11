@@ -1,86 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Boepple Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/JB.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Boepple Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="assets/JB.png" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom shadow-sm py-3">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo-wrapper">
-        <img id="logo" src="./assets/JB.png" alt="Joshua Boepple Portfolio Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo-wrapper">
+          <img
+            id="logo"
+            src="./assets/JB.png"
+            alt="Joshua Boepple Portfolio Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <header>
-    <div class="p-5 mb-4 bg-light rounded-3 text-center">
-      <div class="container py-5">
-        <h1 class="display-5 fw-bold">Hi, I'm Josh</h1>
-        <p class="col-lg-8 mx-auto fs-4">
-          I specialize in front-end development, crafting clean, user-friendly web experiences with modern technology.
-          I'm passionate about building applications that improve businesses and individual lives. I thrive on
-          challenges that push me to grow while meeting goals and deadlines.
-        </p>
-        <a href="contact.html" class="btn btn-primary btn-lg mt-3">Get In Touch</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Footer -->
-  <div style="background-color: #f2f9fc; color: black;" class="pt-3 pb-1 mt-5 border-top">
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
+    <!-- Hero Section -->
+    <header>
+      <div
+        class="hero-overlay position-relative text-center"
+        style="min-height: 400px; max-height: 700px; overflow: hidden"
+      >
+        <img
+          src="assets/Charlotte5.jpg"
+          alt="Hero background"
+          class="hero-bg-img w-100 h-100 position-absolute top-0 start-0"
+          style="
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.5;
+          "
+        />
+        <div
+          class="hero-dark-overlay position-absolute top-0 start-0 w-100 h-100"
+          style="background: rgba(30, 41, 59, 0); z-index: 2"
+        ></div>
+        <div
+          class="p-5 mb-4 bg-transparent rounded-3 position-relative d-flex justify-content-center align-items-center"
+          style="z-index: 3; min-height: 400px"
+        >
+          <div
+            class="container py-5 frosted-glass"
+            style="
+              background: rgba(30, 41, 59, 0.85);
+              border-radius: 1rem;
+              box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+              backdrop-filter: blur(16px);
+              -webkit-backdrop-filter: blur(16px);
+              padding: 3rem 2rem;
+            "
+          >
+            <h1 class="display-5 fw-bold fade-in text-white">Hi, I'm Josh</h1>
+            <p class="lead fade-in text-white" style="font-size: 1.3rem">
+              Front-End Developer | Problem Solver | Creative Thinker
+            </p>
+            <p class="col-lg-8 mx-auto fs-4 fade-in text-white">
+              I specialize in front-end development, crafting clean,
+              user-friendly web experiences with modern technology.<br />
+              I'm passionate about building applications that improve businesses
+              and individual lives.<br />
+              I thrive on challenges that push me to grow while meeting goals
+              and deadlines.
+            </p>
+            <div class="mb-3 fade-in">
+              <span class="badge bg-primary mx-1">HTML</span>
+              <span class="badge bg-info text-dark mx-1">CSS</span>
+              <span class="badge bg-warning text-dark mx-1">JavaScript</span>
+              <span class="badge bg-secondary mx-1">React</span>
+              <span class="badge bg-dark mx-1">Python</span>
+              <span class="badge bg-success mx-1">Git</span>
+              <span class="badge bg-light text-dark border mx-1">GitHub</span>
+              <span class="badge bg-success text-light mx-1">Netlify</span>
+              <span class="badge bg-primary text-light mx-1"
+                >Domain Management</span
+              >
+            </div>
+            <a href="contact.html" class="btn btn-secondary btn-lg mt-3 fade-in"
+              >Get In Touch</a
+            >
+            <a
+              href="projects.html"
+              class="btn btn-outline-secondary btn-lg mt-3 fade-in ms-2"
+              >See My Work</a
+            >
           </div>
         </div>
-
-        <div class="text-center mt-3">
-          <p class="sm m-0 text-center">
-            Connect with me on
-            <a href="https://github.com/jboe26" target="_blank" class="text-decoration-none text-black">GitHub</a>
-            and
-            <a href="https://www.linkedin.com/in/joshrboepple/" target="_blank"
-              class="text-decoration-none text-black">LinkedIn</a>.
-          </p>
-        </div>
-        <nav class="footer-nav small mt-4 text-center">
-          <a href="index.html" class="mx-2 text-decoration-none text-black">Home</a>
-          <a href="projects.html" class="mx-2 text-decoration-none text-black">Projects</a>
-          <a href="contact.html" class="mx-2 text-decoration-none text-black">Contact</a>
-        </nav>
       </div>
-    </footer>
-  </div>
+      <style>
+        .hero-overlay {
+          min-height: 400px;
+          max-height: 700px;
+          overflow: hidden;
+        }
+        .hero-bg-img {
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          position: absolute;
+          filter: blur(1px);
+          opacity: 0.12;
+        }
+        .hero-dark-overlay {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(30, 41, 59, 0);
+          z-index: 2;
+        }
+        .hero-overlay .p-5 {
+          position: relative;
+          z-index: 3;
+        }
+        .hero-overlay .container {
+          background: rgba(30, 41, 59, 0.55);
+          border-radius: 1rem;
+          box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+        }
+        .hero-overlay .text-white {
+          color: #fff !important;
+          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+        }
+      </style>
+    </header>
 
-  <!-- Bootstrap Script Only -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Footer -->
+    <div
+      style="background-color: #f2f9fc; color: black"
+      class="pt-3 pb-1 mt-5 border-top"
+    >
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
+            </div>
+          </div>
 
+          <div class="text-center mt-3">
+            <p class="sm m-0 text-center">
+              Connect with me on
+              <a
+                href="https://github.com/jboe26"
+                target="_blank"
+                class="text-decoration-none text-black"
+                >GitHub</a
+              >
+              and
+              <a
+                href="https://www.linkedin.com/in/joshrboepple/"
+                target="_blank"
+                class="text-decoration-none text-black"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+          <nav class="footer-nav small mt-4 text-center">
+            <a href="index.html" class="mx-2 text-decoration-none text-black"
+              >Home</a
+            >
+            <a href="projects.html" class="mx-2 text-decoration-none text-black"
+              >Projects</a
+            >
+            <a href="contact.html" class="mx-2 text-decoration-none text-black"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap Script Only -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Fade-in animation for hero section
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.querySelectorAll(".fade-in").forEach((el) => {
+            el.style.opacity = 1;
+            el.style.transform = "none";
+            el.style.transition = "opacity 1s, transform 1s";
+          });
+        }, 200);
+      });
+    </script>
+  </body>
 </html>

@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua Boepple Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="assets/JB.png" />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom shadow-sm py-3">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo-wrapper">
-                <img id="logo" src="./assets/JB.png" alt="Joshua Boepple Portfolio Logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo-wrapper">
+          <img
+            id="logo"
+            src="./assets/JB.png"
+            alt="Joshua Boepple Portfolio Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -44,142 +64,199 @@
   </header> -->
 
     <!-- Contact Intro -->
-    <p class="lead mx-auto text-center mt-4" style="max-width: 700px;">
-        Whether you're exploring collaboration or have questions about a project, I'm here to connect.
+    <p class="lead mx-auto text-center mt-4" style="max-width: 700px">
+      Whether you're exploring collaboration or have questions about a project,
+      I'm here to connect.
     </p>
 
     <!-- Contact Form Section -->
     <section class="contact-form-section py-5 bg-light">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-secondary">Let's Connect!</button>
-                    </form>
-                </div>
-<!-- 
-                <div class="col-md-6 text-center">
-                    <h4>Location & Contact</h4>
-                    <p>Charlotte, North Carolina<br />Available for remote and local collaboration</p>
-                    <p><a href="mailto:joshrboepple@outlook.com">Email Me</a></p>
-                </div> -->
-            </div>
+      <div
+        class="container h-100 d-flex justify-content-center align-items-center"
+        style="min-height: 60vh"
+      >
+        <div class="row w-100 justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary">
+                Let's Connect!
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <div style="background-color: #f2f9fc; color: black;" class="pt-3 pb-1 mt-5 border-top">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-3">
-                    <p class="sm m-0 text-center">
-                        Connect with me on
-                        <a href="https://github.com/jboe26" target="_blank"
-                            class="text-decoration-none text-black">GitHub</a>
-                        and
-                        <a href="https://www.linkedin.com/in/joshrboepple/" target="_blank"
-                            class="text-decoration-none text-black">LinkedIn</a>.
-                    </p>
-                </div>
-                <nav class="footer-nav small mt-4 text-center">
-                    <a href="index.html" class="mx-2 text-decoration-none text-black">Home</a>
-                    <a href="projects.html" class="mx-2 text-decoration-none text-black">Projects</a>
-                    <a href="contact.html" class="mx-2 text-decoration-none text-black">Contact</a>
-                </nav>
+    <div
+      style="background-color: #f2f9fc; color: black"
+      class="pt-3 pb-1 mt-5 border-top"
+    >
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <p class="fw-semibold mb-2 m-0">Joshua Boepple Portfolio</p>
             </div>
-        </footer>
+          </div>
+
+          <div class="text-center mt-3">
+            <p class="sm m-0 text-center">
+              Connect with me on
+              <a
+                href="https://github.com/jboe26"
+                target="_blank"
+                class="text-decoration-none text-black"
+                >GitHub</a
+              >
+              and
+              <a
+                href="https://www.linkedin.com/in/joshrboepple/"
+                target="_blank"
+                class="text-decoration-none text-black"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+          <nav class="footer-nav small mt-4 text-center">
+            <a href="index.html" class="mx-2 text-decoration-none text-black"
+              >Home</a
+            >
+            <a href="projects.html" class="mx-2 text-decoration-none text-black"
+              >Projects</a
+            >
+            <a href="contact.html" class="mx-2 text-decoration-none text-black"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </footer>
     </div>
 
     <!-- Success Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title w-100 fw-bold" id="successModalLabel">Message Sent</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-4">
-                    <p>Thank you for reaching out! I'll be in touch shortly.</p>
-                </div>
-                <div class="modal-footer border-0 justify-content-center">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+          <div class="modal-header border-0">
+            <h5 class="modal-title w-100 fw-bold" id="successModalLabel">
+              Message Sent
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pb-4">
+            <p>Thank you for reaching out! I'll be in touch shortly.</p>
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Scripts -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const fadeElements = document.querySelectorAll('.fade-up');
-            fadeElements.forEach(el => {
-                el.style.opacity = 0;
-                el.style.transform = 'translateY(40px)';
-                setTimeout(() => {
-                    el.style.transition = 'all 0.8s ease-out';
-                    el.style.opacity = 1;
-                    el.style.transform = 'translateY(0)';
-                }, 200);
-            });
-
-            const form = document.getElementById('contactForm');
-            if (form) {
-                form.addEventListener('submit', async (e) => {
-                    e.preventDefault();
-
-                    if (!form.checkValidity()) {
-                        form.classList.add('was-validated');
-                        return; // Stop here if form is invalid
-                    }
-
-                    // Optional: reset validation state if needed
-                    form.classList.remove('was-validated');
-
-                    const modal = new bootstrap.Modal(document.getElementById('successModal'));
-                    modal.show();
-
-
-                    const formData = new FormData(form);
-                    const data = Object.fromEntries(formData.entries());
-
-                    try {
-                        const response = await fetch('https://contact-form-backend-5w7f.onrender.com/send-email', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(data),
-                        });
-
-                        if (response.ok) {
-                            form.reset();
-                        } else {
-                            alert('Something went wrong. Please try again.');
-                        }
-                    } catch (err) {
-                        alert('An error occurred. Please try again later.');
-                    }
-                });
-            }
+      document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll(".fade-up");
+        fadeElements.forEach((el) => {
+          el.style.opacity = 0;
+          el.style.transform = "translateY(40px)";
+          setTimeout(() => {
+            el.style.transition = "all 0.8s ease-out";
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+          }, 200);
         });
+
+        const form = document.getElementById("contactForm");
+        if (form) {
+          form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+              form.classList.add("was-validated");
+              return; // Stop here if form is invalid
+            }
+
+            // Optional: reset validation state if needed
+            form.classList.remove("was-validated");
+
+            const modal = new bootstrap.Modal(
+              document.getElementById("successModal")
+            );
+            modal.show();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+              const response = await fetch(
+                "https://contact-form-backend-5w7f.onrender.com/send-email",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(data),
+                }
+              );
+
+              if (response.ok) {
+                form.reset();
+              } else {
+                alert("Something went wrong. Please try again.");
+              }
+            } catch (err) {
+              alert("An error occurred. Please try again later.");
+            }
+          });
+        }
+      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
