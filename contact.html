@@ -230,7 +230,6 @@
             const modal = new bootstrap.Modal(
               document.getElementById("successModal")
             );
-            modal.show();
 
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
@@ -247,6 +246,7 @@
 
               if (response.ok) {
                 form.reset();
+                modal.show();
               } else {
                 alert("Something went wrong. Please try again.");
               }
